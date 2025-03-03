@@ -73,8 +73,8 @@ form .input-single .input:focus{
     border-bottom: 2px solid #000000;
 }
 
-form .input-single .input:focus ~ label, 
-form .input-single .input:valid ~ label{
+form .input-single .input:focus, 
+form .input-single .input:valid{
     transform: translateY(-20px);
     font-size: 12px;
     color: #000000;

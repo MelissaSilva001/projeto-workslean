@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Tela login</title>
     <link rel="stylesheet" href="style-cadas-segunda.css">
+    <script type="text/javascript" src="tela-cadas-segunda.js"></script>
 </head>
 <body>
 <header>
@@ -12,32 +13,61 @@
 </hearder>
     <section class="form-container">
         <div class="container">
-            <form action="">
+            <form action="" id="formulario">
+
                 <h1>RELATORIO DE ENSAIO VISUAL/DIMENSIONAL DE SOLDA</h1>
                 <p>Preencha o formulário com os intrumentos/equipamentos usados abaixo para realizar o login.</p>
-                <div class="input-single">
-                    <input type="text" name="" id="tipo-modelo-box" class="input" required>
-                    <label for="tipo-modelo-box">Tipo/Modelo</label>
-                </div>
-
-                <div class="input-single">
-                    <input type="text" name="" id="tag-box" class="input" required>
-                    <label for="tag-box">Tag</label>
-                </div>
-
-                <div class="input-single">
-                    <input type="text" name="" id="certi-box" class="input" required>
-                    <label for="certi-box">Certificação de Calibração</label>
-                </div>
-
-                <div class="input-single">
-                    <input type="text" name="" id="validade-box" class="input" required>
-                    <label for="validade-box">Validade de Calibração</label>
-                </div>
-
-
-
-                <div class="btn"><input type="submit" value="Próximo"></div>
+                <table border="1" class="input-single">
+                    <tr>
+                        <td id="tipo-modelo-box" class="input">Tipo/Modelo</td>
+                        <td id="tag-box" class="input">Tag</td>
+                        <td id="certi-box" class="input">Certificação de Calibração</td>
+                        <td id="validade-box" class="input">Validade de Calibração</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="" id="tipo-modelo-box" class="input" required></td>
+                        <td><input type="text" name="" id="tag-box" class="input" required></td>
+                        <td><input type="text" name="" id="certi-box" class="input" required></td>
+                        <td><input type="text" name="" id="validade-box" class="input" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="" id="tipo-modelo-box" class="input"></td>
+                        <td><input type="text" name="" id="tag-box" class="input"></td>
+                        <td><input type="text" name="" id="certi-box" class="input"></td>
+                        <td><input type="text" name="" id="validade-box" class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="" id="tipo-modelo-box" class="input"></td>
+                        <td><input type="text" name="" id="tag-box" class="input"></td>
+                        <td><input type="text" name="" id="certi-box" class="input"></td>
+                        <td><input type="text" name="" id="validade-box" class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="" id="tipo-modelo-box" class="input"></td>
+                        <td><input type="text" name="" id="tag-box" class="input"></td>
+                        <td><input type="text" name="" id="certi-box" class="input"></td>
+                        <td><input type="text" name="" id="validade-box" class="input"></td>
+                    </tr>  
+                    <tr>
+                        <td><input type="text" name="" id="tipo-modelo-box" class="input"></td>
+                        <td><input type="text" name="" id="tag-box" class="input"></td>
+                        <td><input type="text" name="" id="certi-box" class="input"></td>
+                        <td><input type="text" name="" id="validade-box" class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="" id="tipo-modelo-box" class="input"></td>
+                        <td><input type="text" name="" id="tag-box" class="input"></td>
+                        <td><input type="text" name="" id="certi-box" class="input"></td>
+                        <td><input type="text" name="" id="validade-box" class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="" id="tipo-modelo-box" class="input"></td>
+                        <td><input type="text" name="" id="tag-box" class="input"></td>
+                        <td><input type="text" name="" id="certi-box" class="input"></td>
+                        <td><input type="text" name="" id="validade-box" class="input"></td>
+                    </tr>                 
+                    </table>
+                <div class="btn"><input type="submit" onclick="checkValidaty()" value="Próximo"></div>
             </form>
         </div>
     </section>

@@ -1,5 +1,25 @@
+
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("formulario").addEventListener("submit", function (event) {
+    const checkboxes = document.querySelectorAll(".card input[type='checkbox']");
+    const form = document.getElementById("formulario");
+
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener("change", function () {
+            if (this.checked) {
+                checkboxes.forEach(cb => {
+                    if (cb !== this) {
+                        cb.checked = false;
+                    }
+                });
+            }
+        });
+    });
+
+    function validarSelecao() {
+        return Array.from(checkboxes).some(cb => cb.checked);
+    }
+
+    form.addEventListener("submit", function (event) {
         event.preventDefault(); 
 
         var campos = document.querySelectorAll(".input");
@@ -10,8 +30,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 formularioValido = false;
             }
         });
+        if (!validarSelecao()) {
+            return;
+        }
+
         if (formularioValido) {
-            window.location.href = "./tela-login.html"; 
+            window.location.href = "./tela-cadastro-segunda.html"; 
         }
     });
 });

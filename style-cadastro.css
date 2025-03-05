@@ -1,174 +1,155 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-* {
+
+
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
 }
 
-body {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    min-height: 100vh;
-    background-color: #ee7405;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-}
-
-/* Centraliza o título */
 .titulo {
     display: flex;
-    justify-content: center;
+    justify-content: center ;
     color: #ffffff;
 }
 
-/* Ajusta container para centralização */
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    max-width: 900px;
-    background: #fff;
-    padding: 3rem;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Formulário */
-form {
+body{
+    padding: 0 auto;
     width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 2rem;
+    height: 100vh;
+    background-color: #ee7405;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Título do formulário */
-form h1 {
+.container{
+    max-width: 1280px;
+    margin: 30px auto;
+    padding: 6%;
+    box-shadow: #f89f4c;
+
+}
+
+form{
+    background: #ffffff;
+    max-width: 600x;
+    height: 580px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+form h1{
     text-align: center;
     margin-bottom: 10px;
     color: #003F87;
     font-size: 22pt;
 }
 
-/* Parágrafo abaixo do título */
-form p {
+form p{
     text-align: center;
     margin-bottom: 25px;
 }
 
-/* Ajuste dos inputs */
-.input-single {
+form .input-single{
     position: relative;
-    width: 100%;
-    margin-bottom: 20px;
+    margin: 30px 0;
 }
 
-/* Estilo dos inputs */
-.input-single .input {
+form .input-single label{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    cursor: text;
+    transition: all 0.5s;
+    color: #000;
+}
+
+form .input-single .input{
     width: 100%;
-    padding: 12px;
-    border-bottom: 2px solid #003F87;
-    border-radius: 5px;
-    outline: none;
+    border: 0;
+    border-bottom: 2px solid #3d3b3b;
+    padding: 5px;
+    outline: 0;
     font-size: 16px;
 }
 
-/* Labels animadas */
-.input-single label {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #666;
-    transition: 0.3s;
+form .input-single .input:focus{
+    border-bottom: 2px solid #000000;
 }
 
-.input-single .input:focus {
-    border-color: #003F87;
-}
-
-.input-single .input:focus ~ label,
-.input-single .input:valid ~ label {
-    top: -10px;
+form .input-single .input:focus ~ label, 
+form .input-single .input:valid ~ label{
+    transform: translateY(-20px);
     font-size: 17px;
-    color: #003F87;
+    color: #2c2c2c;
+    outline: none;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
 }
-
-/* Ajusta espaçamentos iguais para os campos */
-.box-one, .box-two, .box-three {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
+.btn{
     width: 100%;
-}
-
-/* Faz os inputs ficarem alinhados corretamente */
-.box-one .input-single,
-.box-two .input-single,
-.box-three .input-single {
-    flex: 1;
-    min-width: 250px;
-}
-
-/* Alinhamento dos checkboxes */
-.card {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    width: 100%;
-}
-
-.card div {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-/* Personalização dos checkboxes */
-.checkbox-label input {
-    display: none;
-}
-
-.checkbox-customizar {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #003F87;
-    border-radius: 4px;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.checkbox-label input:checked + .checkbox-customizar {
-    background-color: #003F87;
-}
-
-/* Botão */
-.btn {
-    margin-right: auto;
-    margin-left: auto;
-    width: 50%;
     text-align: center;
+    background: none;
 }
 
-form input[type=submit] {
-    width: 100%;
-    padding: 12px;
-    border: none;
+
+
+form input[type=submit]{
+    padding: 10px 40px;
+    border: 0;
     border-radius: 10px;
     background-color: #003F87;
-    color: white;
-    font-size: 16px;
+    color: #ffffff;
+    font-size: 14pt;
     cursor: pointer;
     transition: 0.3s;
 }
+
+form input[type=submit]:hover {
+    background-color: #001f42;
+}
+
+
+.input {
+    width: 100%;
+    border-bottom: 2px solid #ce6300;
+    outline: 0;
+    padding: 5px;
+    font-size: 17px;
+    outline: none;
+}
+.box-one, .box-two, .box-three{
+    display: flex;
+    justify-content: space-around;
+    gap: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .card::after {
     clear: both;
@@ -184,16 +165,7 @@ form input[type=submit] {
     padding: 0px 40px;
 }
 
-.card p {
-    padding-left: 60px;
-    text-align: center;
-}
-
 .card .titulo {
-    display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 20px;
-    padding-left: 20px;
     color: #000;
 
 }
@@ -313,49 +285,242 @@ form input[type=submit] {
 
 
 
+
+
+
+
+
+
+@media (max-width: 425px) {
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+.titulo  h1 {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+
+body {
+    width: 100%;
+    height: 110vh;
+    background-color: #ee7405;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-three p {
+
+}
+
+.container {
+    width: 90%;
+        max-width: 600px;
+        background: #fff;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 80vh; /* Faz o container esticar um pouco mais */
+        margin-bottom: 20px
+}
+
+form {
+    background: #ffffff;
+    max-width: 600px;
+    height: 110%;;
+    padding: 40px;
+    border-radius: 20px;
+    flex-grow: 1;
+}
+
+form h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #003F87;
+    font-size: 22pt;
+}
+
+form p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+form .input-single {
+    position: relative;
+    margin: 30px 0;
+}
+
+form .input-single label {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    cursor: text;
+    transition: all 0.5s;
+    color: #000;
+}
+
+form .input-single .input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #3d3b3b;
+    padding: 5px;
+    outline: 0;
+    font-size: 16px;
+}
+
+form .input-single .input:focus {
+    border-bottom: 2px solid #000000;
+}
+
+form .input-single .input:focus ~ label,
+form .input-single .input:valid ~ label {
+    transform: translateY(-20px);
+    font-size: 17px;
+    color: #2c2c2c;
+}
+
+.btn {
+    padding: 30px;
+    width: 75%;
+    text-align: center;
+}
+
+form input[type=submit] {
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #003F87;
+    color: #ffffff;
+    font-size: 14pt;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 form input[type=submit]:hover {
     background-color: #001f42;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
+/* Estilos para telas menores ou iguais a 768px */
+@media (max-width: 425px) {
+    body {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #ee7405;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+
     .container {
-        width: 95%;
-        padding: 1.5rem;
+
+        margin: 700px auto;
+        width: 90%;
+        max-width: 600px;
+        background: #fff;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh; /* Faz o container esticar um pouco mais */
+        margin-bottom: 20px;
     }
 
     form {
-        padding: 1.5rem;
-        gap: 1rem;
+        width: 100%;
+        max-width: 600px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .input-single {
+        position: relative;
+        width: 100%;
+    }
+
+    .input-single label {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #666;
+        transition: 0.3s;
+    }
+
+    .input-single .input {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid #ce6300;
+        border-radius: 5px;
+        outline: none;
+        font-size: 1rem;
+    }
+
+    .input-single .input:focus {
+        border-color: #003F87;
+    }
+
+    .input-single .input:focus ~ label,
+    .input-single .input:valid ~ label {
+        top: -10px;
+        font-size: 0.8rem;
+        color: #003F87;
     }
 
     .box-one, .box-two, .box-three {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .input-single {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
         width: 100%;
     }
-}
 
-@media (max-width: 480px) {
-    .container {
-        width: 100%;
-        padding: 1rem;
-        border-radius: 0;
-    }
-
-    form {
-        padding: 1rem;
-    }
-
-    .input-single {
-        width: 100%;
+    .box-one .input-single,
+    .box-two .input-single,
+    .box-three .input-single {
+        flex: 1;
+        min-width: 250px;
     }
 
     .card {
-        flex-direction: column;
-        align-items: center;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    form input[type=submit] {
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        border-radius: 10px;
+        background-color: #003F87;
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    form input[type=submit]:hover {
+        background-color: #001f42;
     }
 }

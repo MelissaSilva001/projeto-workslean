@@ -73,6 +73,7 @@ form .input-single label{
     color: #000;
 }
 
+
 form .input-single .input{
     width: 100%;
     border: 0;
@@ -127,6 +128,12 @@ form input[type=submit]:hover {
     font-size: 17px;
     outline: none;
 }
+
+div.box-two {
+    display: flex;
+    justify-content: space-between;
+}
+
 .box-one, .box-two, .box-three{
     display: flex;
     justify-content: space-around;
@@ -170,6 +177,11 @@ form input[type=submit]:hover {
 .card .titulo {
     color: #000;
 
+}
+
+#ilum-title {
+    margin-top: 20px ;
+    color: #000
 }
 
 .checkbox-label input {
@@ -251,6 +263,7 @@ form input[type=submit]:hover {
     background-color: transparent;
 }
 
+
 .checkbox-label .checkbox-customizar::before {
     position: absolute;
     content: "";
@@ -328,7 +341,7 @@ form input[type=submit]:hover {
         max-width: 600px;
         background: #fff;
         padding: 2rem;
-        border-radius: 10px;
+        border-radius: 15px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
@@ -405,6 +418,11 @@ form input[type=submit]:hover {
         flex: 1;
         min-width: 250px;
     }
+    .card .titulo {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
 
     .card {
         display: flex;
@@ -412,6 +430,10 @@ form input[type=submit]:hover {
         gap: 2rem;
         width: 100%;
     }
+    .card .card-artificial {
+        padding-right: 20px;
+        padding-left: 30px
+}
 
     form input[type=submit] {
         width: 100%;
@@ -443,10 +465,11 @@ form input[type=submit]:hover {
 
 
     .card .titulo {
-        padding-top: 3px;
-        margin: 30px 30px 30px 10px;
+        margin: 0 auto;
+        margin-bottom: 300px;
         display: flex;
         justify-content: center;
+        font-size: 19px;
     }
     
 
@@ -467,26 +490,31 @@ form input[type=submit]:hover {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 2rem;
     }
 
     .container {
+        margin-top: 100px; /* Ajustado para descer mais */
         position: relative;
-        top: 120px;
-        width: 60%;
-        max-width: 600px;
+        top: 270px;
+        width: 50%;
+        max-width: 580px;
         background: #fff;
-        padding: 2rem;
-        border-radius: 10px;
+        border-radius: 15px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        min-height: 100vh;
-        margin: 0 auto 100px auto; /* Centraliza e adiciona margem abaixo */
+        height: 100%;
+        margin: 0 auto 0 auto;
     }
 
+
+    .card .checkbox-label .checkbox {
+        margin-left: auto;
+        margin-right: auto;
+
+    }
     form h1 {
         display: flex;
         font-size: 16px;
@@ -494,24 +522,72 @@ form input[type=submit]:hover {
     }
 
     .btn{
-        width: 70%;
+        margin-bottom: 137px;
+        width: 100%;
         text-align: center;
         background: none;
     }
-     header .titulo .titulo-primario {
-        position: relative;
-        top: 110px;
+
+
+    .card .titulo {
         display: flex;
         justify-content: center;
         text-align: center;
-        color: white
     }
 
-    form #formulario {
+
+    .card {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        width: 100%;
+    }
+    .card .card-artificial .titulo {
+        display: flex;
+        justify-content: center;
+        margin: 11px 11px 11px 11px;
+        padding-right: 50%;
+        padding-left: 50%;
+}
+
+.card .card-natural .titulo {
+    display: flex;
+    justify-content: center;
+    margin: 11px 11px 11px 11px;
+    padding-right: 50%;
+    padding-left: 50%;
+}
+
+     header .titulo .titulo-primario {
+        display: block !important;
+        visibility: visible !important;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+
+    .card .checkbox {
+        display: flex;
+        flex-direction: column; /* Alinha em coluna */
+        align-items: center;
+    }
+
+    .box-three .card .checkbox-customizar {
+        margin: 0; /* Remove margem lateral */
+    }
+
+    form .formulario {
         border-radius: 10px;
         margin: 30px 30px 30px 30px;
-        margin-bottom: 870px;
+        margin-bottom: 10px;
         width: 100%;
+        height: 500px;
         padding: 2rem;
         display: flex;
         flex-direction: column;
@@ -523,6 +599,7 @@ form input[type=submit]:hover {
     .input-single {
         position: relative;
         width: 20%;
+        align-items: center;
     }
 
     .input-single label {
@@ -536,12 +613,16 @@ form input[type=submit]:hover {
 
 
     form .input-single .input {
-            width: 70%;
+            width: 60%;
             border: 0;
+            display: flex;
+            margin-right: 120px;
+            align-items: center;
             border-bottom: 2px solid #3d3b3b;
             padding: 5px;
             outline: 0;
             font-size: 16px;
+            gap: 14px;
     }
 
     .input-single .input:focus {
@@ -576,6 +657,11 @@ form input[type=submit]:hover {
         width: 100%;
         padding-right: 18px;
     }
+    .card .checkbox {
+        display:flex;
+        justify-content: space-around;
+    }
+
     .card .checkbox-customizar {
         padding-right: 18px
     }

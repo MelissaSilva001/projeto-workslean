@@ -294,131 +294,18 @@ form input[type=submit]:hover {
 @media (max-width: 425px) {
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Outfit', sans-serif;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Outfit', sans-serif;
+    }
 
-.titulo  h1 {
-    display: flex;
-    justify-content: center;
-    color: #ffffff;
-}
-
-body {
-    width: 100%;
-    height: 110vh;
-    background-color: #ee7405;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.box-three p {
-
-}
-
-.container {
-    width: 90%;
-        max-width: 600px;
-        background: #fff;
-        padding: 2rem;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 80vh; /* Faz o container esticar um pouco mais */
-        margin-bottom: 20px
-}
-
-form {
-    background: #ffffff;
-    max-width: 600px;
-    height: 110%;;
-    padding: 40px;
-    border-radius: 20px;
-    flex-grow: 1;
-}
-
-form h1 {
-    text-align: center;
-    margin-bottom: 10px;
-    color: #003F87;
-    font-size: 22pt;
-}
-
-form p {
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-form .input-single {
-    position: relative;
-    margin: 30px 0;
-}
-
-form .input-single label {
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-    cursor: text;
-    transition: all 0.5s;
-    color: #000;
-}
-
-form .input-single .input {
-    width: 100%;
-    border: 0;
-    border-bottom: 2px solid #3d3b3b;
-    padding: 5px;
-    outline: 0;
-    font-size: 16px;
-}
-
-form .input-single .input:focus {
-    border-bottom: 2px solid #000000;
-}
-
-form .input-single .input:focus ~ label,
-form .input-single .input:valid ~ label {
-    transform: translateY(-20px);
-    font-size: 17px;
-    color: #2c2c2c;
-}
-
-.btn {
-    padding: 30px;
-    width: 75%;
-    text-align: center;
-}
-
-form input[type=submit] {
-    padding: 10px 40px;
-    border: 0;
-    border-radius: 10px;
-    background-color: #003F87;
-    color: #ffffff;
-    font-size: 14pt;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-form input[type=submit]:hover {
-    background-color: #001f42;
-}
-
-/* Estilos para telas menores ou iguais a 768px */
-@media (max-width: 425px) {
-    body {
+    html, body {
         width: 100%;
-        min-height: 100vh;
+        max-width: 100vw; /* Evita rolagem horizontal */
+        min-height: 180vh;
+        overflow-x: hidden; /* Bloqueia a movimentação lateral */
         background-color: #ee7405;
         display: flex;
         align-items: center;
@@ -426,9 +313,13 @@ form input[type=submit]:hover {
         padding: 2rem;
     }
 
-    .container {
+    form h1 {
+        justify-content: center;
+        display: flex;
+        font-size: 18px;
+    }
 
-        margin: 700px auto;
+    .container {
         width: 90%;
         max-width: 600px;
         background: #fff;
@@ -439,18 +330,20 @@ form input[type=submit]:hover {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        min-height: 100vh; /* Faz o container esticar um pouco mais */
-        margin-bottom: 20px;
+        min-height: 100vh;
+        margin: 0 auto 100px auto; /* Centraliza e adiciona margem abaixo */
     }
 
     form {
+        border-radius: 10px;
+        margin-bottom: 900px;
         width: 100%;
-        max-width: 600px;
         padding: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;
+        border: 0
     }
 
     .input-single {
@@ -474,6 +367,150 @@ form input[type=submit]:hover {
         border-radius: 5px;
         outline: none;
         font-size: 1rem;
+    }
+
+    .input-single .input:focus {
+        border-color: #003F87;
+    }
+
+    .input-single .input:focus ~ label,
+    .input-single .input:valid ~ label {
+        top: -10px;
+        font-size: 0.8rem;
+        color: #003F87;
+    }
+
+    .box-one, .box-two, .box-three {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .box-one .input-single,
+    .box-two .input-single,
+    .box-three .input-single {
+        flex: 1;
+        min-width: 250px;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    form input[type=submit] {
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        border-radius: 10px;
+        background-color: #003F87;
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    form input[type=submit]:hover {
+        background-color: #001f42;
+    }
+}
+
+
+@media (max-width: 320px) {
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Outfit', sans-serif;
+    }
+
+    .box-three .card .titulo {
+        display: block
+        margin: 30px 30px 30px 30px
+    }
+
+    .box-three .card .checkbox-customizar {
+        margin: 30px 30px 30px 30px;
+    }
+    html, body {
+        width: 110%;
+        max-width: 100vw; /* Evita rolagem horizontal */
+        min-height: 180vh;
+        overflow-x: hidden; /* Bloqueia a movimentação lateral */
+        background-color: #ee7405;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+    .container {
+        width: 60%;
+        max-width: 600px;
+        background: #fff;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0 auto 100px auto; /* Centraliza e adiciona margem abaixo */
+    }
+
+    form h1 {
+        display: flex;
+        font-size: 16px;
+        justify-content: center;
+    }
+
+    .btn{
+        width: 70%;
+        text-align: center;
+        background: none;
+    }
+
+
+    form {
+        border-radius: 10px;
+        margin-bottom: 900px;
+        width: 100%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        border: 0
+    }
+
+    .input-single {
+        position: relative;
+        width: 20%;
+    }
+
+    .input-single label {
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #666;
+        transition: 0.3s;
+    }
+
+
+    form .input-single .input {
+            width: 70%;
+            border: 0;
+            border-bottom: 2px solid #3d3b3b;
+            padding: 5px;
+            outline: 0;
+            font-size: 16px;
     }
 
     .input-single .input:focus {

@@ -45,6 +45,8 @@ form{
     border-radius: 20px;
 }
 
+
+
 form h1{
     text-align: center;
     margin-bottom: 10px;
@@ -320,6 +322,8 @@ form input[type=submit]:hover {
     }
 
     .container {
+        position: relative;
+        top: 120px;
         width: 90%;
         max-width: 600px;
         background: #fff;
@@ -344,6 +348,14 @@ form input[type=submit]:hover {
         align-items: center;
         gap: 1.5rem;
         border: 0
+    }
+    header .titulo .titulo-primario {
+        position: relative;
+        top: 110px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: white
     }
 
     .input-single {
@@ -429,9 +441,18 @@ form input[type=submit]:hover {
         font-family: 'Outfit', sans-serif;
     }
 
+
+    .card .titulo {
+        padding-top: 3px;
+        margin: 30px 30px 30px 10px;
+        display: flex;
+        justify-content: center;
+    }
+    
+
     .box-three .card .titulo {
-        display: block
-        margin: 30px 30px 30px 30px
+        display: block;
+        justify-content
     }
 
     .box-three .card .checkbox-customizar {
@@ -450,6 +471,8 @@ form input[type=submit]:hover {
     }
 
     .container {
+        position: relative;
+        top: 120px;
         width: 60%;
         max-width: 600px;
         background: #fff;
@@ -475,11 +498,19 @@ form input[type=submit]:hover {
         text-align: center;
         background: none;
     }
+     header .titulo .titulo-primario {
+        position: relative;
+        top: 110px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: white
+    }
 
-
-    form {
+    form #formulario {
         border-radius: 10px;
-        margin-bottom: 900px;
+        margin: 30px 30px 30px 30px;
+        margin-bottom: 870px;
         width: 100%;
         padding: 2rem;
         display: flex;
@@ -543,6 +574,10 @@ form input[type=submit]:hover {
         justify-content: center;
         gap: 2rem;
         width: 100%;
+        padding-right: 18px;
+    }
+    .card .checkbox-customizar {
+        padding-right: 18px
     }
 
     form input[type=submit] {

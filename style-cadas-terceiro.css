@@ -11,13 +11,23 @@ body {
 table {
     display:flex;
     justify-content: center;
+    table-layout:fixed;
 }
+
 
 .form-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+.titulo {
+    color: #ffffff;
+}
+
+form h1 {
+    color: #003F87;
 }
 
 .container {
@@ -30,6 +40,13 @@ table {
     text-align: center;
 }
 
+.title-deti {
+    font-size: 19px;
+}
+
+.input-sinete-nch {
+    width:80%;
+}
 
 .sinete td {
     max-width: 50px;
@@ -50,12 +67,17 @@ table {
 
 .dese-linha td input {
     max-width: 130px;
+
 }
 
 .info-sodal td {
     max-width: 130px;
     width: 20px;
 
+}
+
+#title-sodal {
+    font-size: 14px;
 }
 
 .info-sodal td input {
@@ -71,3 +93,27 @@ table {
     max-width: 75px;
 }
 
+
+.btn {
+    margin-right: auto;
+    margin-left: auto;
+    width: 10%;
+    text-align: center;
+    margin-top: 20px; /* Diminuído para evitar problemas em telas pequenas */
+}
+
+form input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #003F87;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form input[type=submit]:hover {
+    background-color: #001f42;
+}

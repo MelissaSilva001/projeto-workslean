@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Relatório</title>
+    <link rel="stylesheet" href="style-cadas-quarta.css">
+    <script type="text/javascript" src="tela-cadas-quarta.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="titulo"><h1 class="titulo-primario">Workslean</h1></nav>
+    </hearder>
+        <section class="form-container">
+            <div class="container">
+                <form action="" id="formulario">
+                    <h1>RELATORIO DE ENSAIO VISUAL/DIMENSIONAL DE SOLDA</h1>
+                    <p>Preencha o formulário abaixo para realizar o relatório.</p>
+                            <div id="laudo-title"><p>Laudo:</p></div>                            
+                            <div class="card-laudo card" >                              
+                              <div class="card-aprov">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="checkbox-aprov" class="checkbox">
+                                    <span class="checkbox-aprove checkbox-customizar"></span>
+                                </label>
+                                <div class="titulo">Aprovado</div>
+                                </div>
+
+                                <div class="card-reprove">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="checkbox-reprov" class="checkbox">
+                                        <span class="checkbox-reprove checkbox-customizar"></span>
+                                    </label>
+                                    <div class="titulo">Reprovado</div>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+                                <div id="rcn-title"><p>RNC:</p></div>                            
+                                <div class="card-rnc card" >                              
+                                  <div class="card-sim">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="checkboxSim" onclick="toggleCheckboxes('sim')">
+                                        <span class="checkbox-sim checkbox-customizar"></span>
+                                    </label>
+                                    <div class="titulo">Sim</div>
+                                    </div>
+    
+                                    <div class="card-nao">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" id="checkboxNao" onclick="toggleCheckboxes('nao')">
+                                            <span class="checkbox-nao checkbox-customizar"></span>
+                                        </label>
+                                        <div class="titulo">Não</div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="input-single" style="display: none;">
+                                        <input type="text" name="" id="number-rnc-box" class="input" required>
+                                        <label for="number-rnc-box">N° da RNC: </label>
+                                    </div>
+                                
+                        <div class="btn"><input type="submit"  onclick="checkValidaty()" value="Próximo"></div>
+                </form>
+            </div>
+        </section>
+</body>
+</html>

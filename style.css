@@ -471,16 +471,15 @@ div.box-two {
         justify-content: center;
         font-size: 19px;
     }
-    
 
     .box-three .card .titulo {
         display: block;
-        justify-content
     }
 
     .box-three .card .checkbox-customizar {
         margin: 30px 30px 30px 30px;
     }
+
     html, body {
         width: 110%;
         max-width: 100vw; /* Evita rolagem horizontal */

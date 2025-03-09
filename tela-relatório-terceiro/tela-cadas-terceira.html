@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Relatório</title>
     <link rel="stylesheet" href="style-cadas-terceiro.css">
+    <script type="text/javascript" src="tela-cadas-terceira.js"></script>
 </head>
 <body>
 <header>
@@ -15,13 +16,13 @@
             <form action="" id="formulario">
 
                 <h1>RELATORIO DE ENSAIO VISUAL/DIMENSIONAL DE SOLDA</h1>
-                <p>Preencha o formulário com os intrumentos/equipamentos usados abaixo para realizar o login.</p>
-                <table class="input-single" border="1">
+                <p>Preencha o formulário o abaixo para realizar o relatório.</p>
+                <table class="input-single">
                     <tr><td id="titulo"  class="input" colspan="5">Registro dos resultados</td></tr>
                     <tr>
                         <td class="descontinu">
-                            <table border="1">
-                                <tr><td id="title-defe">Defeito<br>/Desocontinuidade</td> </tr>
+                            <table>
+                                <tr><td id="title-defe title">Defeito<br>/Desocontinuidade</td> </tr>
                                 </tr>
                                 <td><input type="text" id="defe" name=""></td>
                                 </tr> 
@@ -52,8 +53,8 @@
                             </table>
                         </td> 
                         <td class="dese-linha-equip">
-                            <table border="1">
-                                <tr><td id="title-linha">Linha/Equipamento/<br>Estrutura</td> </tr>
+                            <table>
+                                <tr><td id="title-linha title">Linha/Equipamento/<br>Estrutura</td> </tr>
                                 </tr>
                                 <td><input type="text" name="" id="linha" class="input"></td>
                                 </tr> 
@@ -84,8 +85,8 @@
                             </table>
                         </td> 
                         <td class="dese-linha">
-                            <table border="1">
-                                <tr><td id="title-dese">Desenho de Referência</td> </tr>
+                            <table>
+                                <tr><td id="title-dese title">Desenho de Referência</td> </tr>
                                     <td><input type="text" name="" id="desenho-ref-table-box" class="input"></td>
                                 </tr> 
                                 <tr>
@@ -115,8 +116,8 @@
                             </table>
                         </td> 
                         <td class="deti-box">
-                            <table border="1">
-                                <tr><td colspan="6" class="title-deti">Detalhes da Junta Soldada</td> </tr>
+                            <table>
+                                <tr><td colspan="6" class="title-deti title">Detalhes da Junta Soldada</td> </tr>
                                 </tr>
                                     <td class="input" id="numero-junta">N° da Junta</td> 
                                     <td class="input" id="in-mm">Ø (in/mm)</td> 
@@ -192,12 +193,12 @@
                             </table>
                         </td>
                         <td class="info-sodal">
-                            <table border="1">
+                            <table>
                                 <tr><td colspan="2" id="title-sodal">Informações <br>de soldagem</td> </tr>
                                 </tr>
 
                                 <td class="eps-ieis">
-                                        <table border="1">
+                                        <table>
                                         </tr>
                                         <td class="title-eps">EPS/IEIS</td> 
                                         </tr> 
@@ -230,7 +231,7 @@
                                     <td class="sinete" id="in-mm">
                              <table>
                                             <tr><td id="title-sinete">Sinete do Soldador</td></tr>
-                                        <table border="1" class="sinete">
+                                        <table class="sinete">
                                         </tr>
                                         <td class="input" id="raiz">Raiz</td> 
                                             <td class="input" id="nch-acai">NCH./<br>ACAI</td> 

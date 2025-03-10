@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         
         if (allFilled) {
-            window.location.href = "C:/projeto-worksleans/tela-relatório-terceiro-folder/tela-cadas-terceira.html"; 
+            window.location.href = "C:/projeto-worksleans/tela-cadas-terceira.html"; 
         } else {
             alert("Por favor, preencha todos os campos obrigatórios antes de prosseguir.");
         }

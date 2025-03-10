@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         
         if (allFilled) {
-            window.location.href = "C:/projeto-worksleans/tela-relatório-quarta-folder/tela-cadas-quarta.html"; 
+            window.location.href = "C:/projeto-worksleans/tela-cadas-quarta.html"; 
         } else {
             alert("Por favor, preencha todos os campos obrigatórios antes de prosseguir.");
         }

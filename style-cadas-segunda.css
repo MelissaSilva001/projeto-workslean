@@ -149,7 +149,7 @@ th {
     .container {
         width: 95%; /* Usa mais espaço da tela */
         padding: 20px;
-        margin-top: 70px;
+        margin-top: 140px;
     }
 
     form {
@@ -176,7 +176,7 @@ th {
         width: 100%;
         padding: 15px;
         border-radius: 0;
-        margin-top: 70px;
+        margin-top: 140px;
     }
     body {
         overflow-x: hidden;
@@ -207,7 +207,7 @@ th {
         padding: 20px;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 70px;
+        margin-top: 140px;
 
     }
 
@@ -238,7 +238,7 @@ th {
         width: 100%;
         padding: 10px;
         border-radius: 5px;
-        margin-top: 70px;
+        margin-top: 140px;
     }
     body {
         overflow-x: hidden;

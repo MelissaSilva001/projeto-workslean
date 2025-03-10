@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (formularioValido) {
-            window.location.href = "C:/projeto-worksleans/tela-relatório-segunda/tela-cadastro-segunda.html"; 
+            window.location.href = "C:/projeto-worksleans/tela-relatório-segunda-folder/tela-cadastro-segunda.html"; 
         }
     });
 });

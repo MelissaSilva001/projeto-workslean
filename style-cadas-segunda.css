@@ -7,6 +7,10 @@
     font-family: 'Outfit', sans-serif;
 }
 
+.titulo {
+    color: #ffffff;
+}
+
 body {
     width: 100%;
     height: 100vh;
@@ -15,6 +19,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px; /* Adiciona um espaçamento para telas pequenas */
+    overflow-x: hidden;
 }
 
 .container {
@@ -28,7 +33,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
 }
 
 /* Formulário Responsivo */
@@ -138,9 +143,13 @@ th {
 
 /* Ajustes para dispositivos menores */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
     .container {
         width: 95%; /* Usa mais espaço da tela */
         padding: 20px;
+        margin-top: 70px;
     }
 
     form {
@@ -167,6 +176,10 @@ th {
         width: 100%;
         padding: 15px;
         border-radius: 0;
+        margin-top: 70px;
+    }
+    body {
+        overflow-x: hidden;
     }
 
     form {
@@ -193,9 +206,14 @@ th {
         width: 90%; /* Usa mais espaço da tela */
         padding: 20px;
         margin-left: auto;
-        margin-right: auto
+        margin-right: auto;
+        margin-top: 70px;
+
     }
 
+    body {
+        overflow-x: hidden;
+    }
     form {
         max-width: 100%;
         padding: 20px;
@@ -220,6 +238,10 @@ th {
         width: 100%;
         padding: 10px;
         border-radius: 5px;
+        margin-top: 70px;
+    }
+    body {
+        overflow-x: hidden;
     }
 
     form {

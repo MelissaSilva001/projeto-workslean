@@ -6,6 +6,8 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table {
@@ -27,10 +29,13 @@ table {
     justify-content: center;
     align-items: center;
     width: 100%;
+    left: 50px;
 }
 
 .titulo {
     color: #ffffff;
+    margin-right: 30%;
+    justify-content: center;
 }
 
 .descontinu table {
@@ -46,7 +51,7 @@ table {
 }
 
 .deti-box table {
-    border: 1px solid #000000
+    border: 1px solid #000000;
 }
 
 
@@ -74,6 +79,8 @@ form h1 {
     max-width: 1500px;
     width: 100%;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .title-deti {
@@ -139,6 +146,10 @@ form h1 {
 }
 
 
+#title-sodal {
+    font-size: 13px;
+}
+
 .btn {
     margin-right: auto;
     margin-left: auto;
@@ -165,3 +176,55 @@ form input[type=submit]:hover {
 
 
 
+
+
+
+
+
+@media (max-width: 320px) {
+
+    .dese-linha td input{
+        width: 5%;
+
+    }
+
+    .deti-box table {
+        border: 1px solid #000000;
+        width: 100%;
+    }
+    #deti-box, .deti-box td {
+        max-width: 50px; 
+        width: 4px;
+        font-size: 13px;
+    }
+    
+    #deti-box, .deti-box td input {
+        max-width: 40px;
+    }   
+
+    .deti-box .title-deti {
+        font-size: 22px;
+    }
+
+    .info-sodal td input {
+        max-width: 50px;
+    }
+    .sinete .input-sinete {
+        width: 40px;
+    }
+    #raiz {
+        width: 18px;
+        font-size: 12px;
+    }
+
+    #nch-acai {
+        font-size: 12px;
+        width: 22px;
+    }
+
+    .info-sodal td {
+        max-width:65px;
+        width: 10px;
+    
+    }
+} 
